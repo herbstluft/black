@@ -36,7 +36,7 @@ ul,li{
     color: #00fff7;
 }
 .enlace:hover{
-    color: rgb(172, 251, 3);
+    color: #00fff7;
 }
 
 .pres{
@@ -69,3 +69,29 @@ canvas{
 }
 
 /* rgba(26, 208, 0, 1) **/
+
+/* Carousel **/
+
+
+
+
+.btn_hack{
+  margin: auto;
+  width: 200px; 
+  height: 40px; 
+  border-radius: 0px;
+  border: 1px solid #00fff7; 
+  background: #003d3c93;
+}
+.hack{
+  color: #00fff7;
+background: #232323;
+text-shadow: 0 0 10px #00b88a, 0 0 10px #18ffdcb8, 0 0 20px #01775f, 0 0 55px #04e3b6, 0 0 75px;
+}
+.hack_font{
+  color: #00fff7;
+text-shadow: 0 0 10px #00b88a, 0 0 10px #18ffdcb8, 0 0 10px #01775f, 0 0 0px #04e3b6, 0 0 5px;
+}
+.font{
+ font-size: 16px;
+}
