@@ -95,3 +95,10 @@ text-shadow: 0 0 10px #00b88a, 0 0 10px #18ffdcb8, 0 0 10px #01775f, 0 0 0px #04
 .font{
  font-size: 16px;
 }
+.ul,.li{
+  display: inline-block;
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+ 
+}
