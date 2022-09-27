@@ -92,6 +92,52 @@
   <p class="texto" style="margin:5px;">Contraseña: root</p>
 </div>
 <hr style="border:1px solid #00fff7">
+<p class="texto">Pondremos la contraseña del usuario <b class="hack_font">blackos</b> y esperamos a que se habiliten algunos servicios y el entorno grafico.</p>
+<center>
+  <div>
+    <img class="img-b"src="../img/blackos_install/login.png" alt="Photo" style="width:90%;">
+  </div>
+  </center>
+  <br>
+  <hr style="border:1px solid #00fff7">
+  <p class="texto">Una vez iniciado el sistema, para iniciar la instalación daremos click derecho, se nos abrira el menu de fluxbox, seleccionamos <b class="hack_font">Instalar BlackOS</b>. Para evitar cualquier problema que pueda hacer que reinicie la instalación, asegúrese de tener Internet disponible en la máquina donde desea instalar BlackOS. Puede enumerar las interfaces de red disponibles con el comando <b class="hack_font">ifconfig</b> . </p>
+  <center>
+    <div>
+      <img class="img-b"src="../img/blackos_install/click_derecho_instalar.png" alt="Photo" style="width:90%;">
+    </div>
+    </center>
+    <br>
+    <hr style="border:1px solid #00fff7">
+
+<p class="texto">Se abrira la siguiente ventana en la que nos pedira la contraseña para poder proceder con la instalación, recordemos que la contraseña sera <b class="hack_font">blackos</b></p>
+    <center>
+      <div>
+        <img class="img-b"src="../img/blackos_install/install_contrasena.png" alt="Photo" style="width:90%;">
+      </div>
+      </center>
+      
+      <br><br>
+      <p class="texto">En seguida se comenzara a actualizar el sistema y a firmar algunas llaves gpg. Esperaremos un poco, hasta que nos mande a la parte donde particionaremos nuestro disco duro.</p>
+      <br>
+      
+      <center>
+        <div>
+          <img class="img-b"src="../img/blackos_install/keys.png" alt="Photo" style="width:90%;">
+        </div>
+        </center>
+        <br>
+        <hr style="border:1px solid #00fff7">
+
+        <p class="texto">Fdisk es una herramienta que nos ayuda a particionar nuestro disco duro, como podemos ver ya estamos en ella. Lo primero que tendremos que tener en cuenta sera el <b class="hack_font">tipo de etiqueta del disco duro</b>, debera ser de tipo<b class="hack_font"> GPT</b> eso aplicaria para los sistemas con UFEI. En la siguiente imagen podemos ver que en la opcion de Tipo de etiquetade disco es DOS. Asi que presionamos la <b class="hack_font">tecla G</b> para darle a nuestro disco un tipo GPT. Una vez apretado presionamos la <b class="hack_font">tecla P</b> y ahora podemos ver como cambio a tipo GPT.</p>        <center>
+          <div>
+            <img class="img-b"src="../img/blackos_install/fdisk.png" alt="Photo" style="width:90%;">
+          </div>
+          </center>
+          <br>
+          <hr style="border:1px solid #00fff7">
+          <br>
+          <p class="texto">Ahora crearemos las 3 particiones principales: Intercambio, root, y sistema de archivos. Cabe destacar que con la <b class="hack_font">letra N</b> hacemos una nueva particion, con la <b class="hack_font" >letra T</b> cambiamos el tipo de particion</p>  
+
 
 </div>
 <!--Todo-->
