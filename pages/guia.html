@@ -66,7 +66,7 @@
 <br><br><br><br><br>
 
 <!--Todo-->
-<div style="padding: 40px;">
+<div style="padding: 40px; ">
 
 
 
@@ -134,10 +134,143 @@
           </div>
           </center>
           <br>
+          <p class="texto">Ahora crearemos las 3 particiones principales: Intercambio, root, y sistema de arranque. Cabe destacar que con la <b class="hack_font">letra N</b> hacemos una nueva particion, con la <b class="hack_font" >letra T</b> cambiamos el tipo de particion</p>  
+
           <hr style="border:1px solid #00fff7">
           <br>
-          <p class="texto">Ahora crearemos las 3 particiones principales: Intercambio, root, y sistema de archivos. Cabe destacar que con la <b class="hack_font">letra N</b> hacemos una nueva particion, con la <b class="hack_font" >letra T</b> cambiamos el tipo de particion</p>  
+<center><h3><b class="hack_font">Partición de arranque</b></h3></center>
+          <p class="texto">1. Procedemos a crear la de sistema de arranque (boot), <b class="hack_font">presionamos n</b> para crear una nueva particion, los siguientes campos los dejamos por default, solo damos enter en  <b class="hack_font">Numero de particion y Primer sector</b> en el ultimo sector tendremos que establecer las Gigas que deseamos asignar, representando con un <b class="hack_font">+ </b> antes del tamaño y despues del tamaño, la letra <b class="hack_font">G</b></p>
+<p class="texto"><b class="hack_font">-></b> Ejemplo: +2G</p>
+<hr style="border:1px solid #00fff7">
+<p class="texto">Una vez creada, cambiamos el tipo de particion ya que por default es Linux Filesystem, <b class="hack_font">presionamos T</b> y  <b class="hack_font">tecleamos 1</b> esto representaria una particion tipo EFI System. </p>
+<br>
+      
+<center>
+  <div>
+    <img class="img-b"src="../img/blackos_install/boot.png" alt="Photo" style="width:90%;">
+  </div>
+  </center>
+  <br>
+  <hr style="border:1px solid #00fff7">
 
+  <center><h3><b class="hack_font">Partición de Intercambio</b></h3></center>
+<p class="texto"> 2. Procedemos a crear la de intercambio, hacemos el mismo procedimiento que el anterior solo cambiando el tamaño de la particion y el tipo. Cuando presionemos T, seleccionamos la particion numero 2 ya que conforme vamos creando particiones van aumentando de forma autoincrementable, despues <b class="hack_font">ponemos 19, que hace referencia a una particion de Intercambio (Linux Swap).</b></p>
+<p class="texto">Despues podemos <b class="hack_font">presionar P</b> para ver las particiones creadas hasta el momento. (EFI System, Linux Swap)</p>
+<br>
+<center>
+  <div>
+    <img class="img-b"src="../img/blackos_install/swap.png" alt="Photo" style="width:90%;">
+  </div>
+  </center>
+  <br>
+  <hr style="border:1px solid #00fff7">
+
+  <center><h3><b class="hack_font">Partición Root</b></h3></center>
+  <p class="texto">3. Por ultimo creamos la particion de root o la de sistema de archivos, volviendo a realizar el mismo procedimiento, excepto el cambio de tipo de particion esta quedara como tipo <b class="hack_font">Linux Filesystem</b>. Presionamos N, omitimos el numero de particion y el primer sector, en la opcion de <b class="hack_font">ultimo sector</b> omitiremos dando enter. Hacemos esto ya que la ultima particion ocupara todo el espacio libre en el disco duro,</b> podemos teclear la <b class="hack_font">letra P</b> para verficar que las particiones esten correctas. Por ultimo <b class="hack_font">tecleamos la letra W</b> para escribir los cambios realizados en el disco y proceder con la instalación.</p>
+  
+  <br>
+      
+  <center>
+    <div>
+      <img class="img-b"src="../img/blackos_install/root.png" alt="Photo" style="width:90%;">
+    </div>
+    </center>
+    <br>
+
+
+    <center>
+    <div style="width: 300px;" class="nota">
+      <p class="texto" style="margin:5px;">Una vez escritos los cambios nos pedira nuevamente la contraseña de blackos, para formatear las particiones de manera correspondiente, recordemos que es <b class="hack_font">blackos.</b></p>
+     <p class="texto"> Despues de ello se empezara a descargar todo el software necesario</p>  
+   </div>
+  </center>
+  <br><br>
+  <center>
+    <div style="width: 300px;" class="nota">
+      <p class="texto" style="margin:5px;">Una vez descargado todo el software se nos pedira nuevamente la contraseña para continuar con la instalacion y empezar a configurar el sistema.</p>
+   </div>
+  </center>
+  <br>
+  <p class="texto">Se mostrara un apartado como el siguiente: escribiremos <b class="hack_font">blackosinstall_continue</b> para reanudar la instalación.</p>
+  <br>
+      
+  <center>
+    <div>
+      <img class="img-b"src="../img/blackos_install/chroot.png" alt="Photo" style="width:90%;">
+    </div>
+    </center>
+    <br>
+    <hr style="border:1px solid #00fff7">
+
+    <br>
+  <p class="texto">Esperamos un poco y establecemos un nombre a nuestra <b class="hack_font">PC</b>.</p>
+  <br>
+      
+  <center>
+    <div>
+      <img class="img-b"src="../img/blackos_install/pc.png" alt="Photo" style="width:90%;">
+    </div>
+    </center>
+    <br>
+    <hr style="border:1px solid #00fff7">
+
+    <p class="texto">Ingresamos nuestro<b class="hack_font"> nombre de usuario</b>.</p>
+    <br>
+        
+    <center>
+      <div>
+        <img class="img-b"src="../img/blackos_install/user.png" alt="Photo" style="width:90%;">
+      </div>
+      </center>
+      <br>
+      <hr style="border:1px solid #00fff7">
+
+
+      <p class="texto">Creamos una contraseña segura para nuestro usuario. Cabe destacar que no se mostraran las contraseñas al momento de escribir debido a la seguridad.</p>
+      <br>
+          
+      <center>
+        <div>
+          <img class="img-b"src="../img/blackos_install/passwd_user.png" alt="Photo" style="width:90%;">
+        </div>
+        </center>
+        <br>
+        <hr style="border:1px solid #00fff7">
+
+
+        <p class="texto">Creamos una contraseña segura para nuestro usuario root.</p>
+        <br>
+            
+        <center>
+          <div>
+            <img class="img-b"src="../img/blackos_install/passwd_root.png" alt="Photo" style="width:90%;">
+          </div>
+          </center>
+          <br>
+      <hr style="border:1px solid #00fff7">
+<br>
+      <p class="texto">Esperamos un poco a que finalicen los ultimos procesos.</p>
+        <br>
+            
+        <center>
+          <div>
+            <img class="img-b"src="../img/blackos_install/install_grub.png" alt="Photo" style="width:90%;">
+          </div>
+          </center>
+          <br>
+      <hr style="border:1px solid #00fff7">
+
+      <br>
+      <p class="texto">Por ultimo una vez mostrado este mensaje daremos <b class="hack_font">click derecho -> Fluxbox Menu -> Sistema -> Reiniciar. </b>. Listoo una vez hecho esto nuestro sistema estaria instalado con controloadores de audio, bluetooth y todo lo incluido de BlackOS.</p>
+        <br>
+            
+        <center>
+          <div>
+            <img class="img-b"src="../img/blackos_install/reboot.png" alt="Photo" style="width:90%;">
+          </div>
+          </center>
+          <br>
+      <hr style="border:1px solid #00fff7">
 
 </div>
 <!--Todo-->
